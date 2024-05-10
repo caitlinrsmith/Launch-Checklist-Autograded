@@ -57,22 +57,23 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
   if (validateInput(pilot) === 'Not a Number') {
     list.style = 'visibility: visible';
     pilotStatus.innerHTML = `Pilot ${pilot} is ready for launch`;}
-//   else {
-//     alert('Pilot Name must be letters!');
-//     list.style = 'visibility: visible';
-//     pilotStatus.innerHTML = `Pilot not ready for launch`;
-//     launchStatus.innerHTML = 'Shuttle Not ready for Launch';
-//     launchStatus.style.color = 'red';
-//   }
+  else {
+    alert('Pilot Name must be letters!');
+    // list.style = 'visibility: visible';
+    // pilotStatus.innerHTML = `Pilot not ready for launch`;
+    // launchStatus.innerHTML = 'Shuttle Not ready for Launch';
+    // launchStatus.style.color = 'red';
+  }
   if (validateInput(copilot) === 'Not a Number') {
     list.style = 'visibility: visible';
     copilotStatus.innerHTML = `Co-pilot ${copilot} is ready for launch`;}
-//   else {
-//     alert('Co-pilot Name must be letters!');
-//     list.style = 'visibility: visible';
-//     copilotStatus.innerHTML = `Co-pilot not ready for launch`;
-//     launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
-//     launchStatus.style.color = 'red';
+  else {
+    alert('Co-pilot Name must be letters!');
+    // list.style = 'visibility: visible';
+    // copilotStatus.innerHTML = `Co-pilot not ready for launch`;
+    // launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
+    // launchStatus.style.color = 'red';
+  }
 
     if (validateInput(fuelLevel) === 'Not a Number') {
       alert('Fuel Level must be a number!');
